@@ -3,8 +3,8 @@ import "./btnspinner.css";
 
 const ButtonSpinner = () => {
   return (
-    <div>
-      <span class="loaderBtn"></span>
+    <div className="text-center mx-auto w-full rounded pt-[2px] bg-teal-300">
+      <span className="loaderBtn"></span>
     </div>
   );
 };

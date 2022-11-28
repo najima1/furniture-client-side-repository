@@ -6,13 +6,13 @@ import toast from "react-hot-toast";
 
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Authcontext/ContextProvider";
+import ButtonSpinner from "../Deshboard/DeshboardLayout/Deshboard_pages/ButtonSpinner/ButtonSpinner";
 
 const Login = () => {
   const [showModal, setModal] = useState(null);
-  const { loginWithGoogle, loginUserEmailPassword, user } =
+  const { loginWithGoogle, loginUserEmailPassword, user, loadin, setLoading } =
     useContext(AuthContext);
   const selectItem = useRef();
-  console.log(user);
   const location = useLocation();
   const {
     register,
@@ -35,7 +35,10 @@ const Login = () => {
         toast.success("Login successfull");
         navigate("/home");
       })
-      .catch((e) => toast.error(e.message));
+      .catch((e) => {
+        toast.error(e.message);
+        setLoading(false);
+      });
   };
 
   //signInWithGoogle
@@ -160,12 +163,16 @@ const Login = () => {
           </div>
           {/* submit button */}
           <div className="mt-6">
-            <button
-              type="submit"
-              className="w-full px-6 py-2 text-sm font-medium trackingWide textWhite capitalize transition-colors duration-300 transform bg-teal-400 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
-            >
-              Login
-            </button>
+            {loadin ? (
+              <ButtonSpinner />
+            ) : (
+              <button
+                type="submit"
+                className="w-full px-6 py-2 text-sm font-medium trackingWide textWhite capitalize transition-colors duration-300 transform bg-teal-400 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+              >
+                Login
+              </button>
+            )}
 
             {/* login with google */}
             <div>

@@ -9,9 +9,10 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { AuthContext } from "../../Authcontext/ContextProvider";
+import ButtonSpinner from "../Deshboard/DeshboardLayout/Deshboard_pages/ButtonSpinner/ButtonSpinner";
 
 const Signup = () => {
-  const { signOutUser } = useContext(AuthContext);
+  const { signOutUser, loadin, setLoading } = useContext(AuthContext);
 
   const {
     loading,
@@ -48,12 +49,18 @@ const Signup = () => {
 
         updateProfileUser({ displayName: data.name })
           .then(() => {})
-          .catch((e) => toast.error(e.message));
+          .catch((e) => {
+            toast.error(e.message);
+            setLoading(false);
+          });
 
         //save user
         saveUserInDatabase(inputUser);
       })
-      .catch((e) => toast.error(e.message));
+      .catch((e) => {
+        toast.error(e.message);
+        setLoading(false);
+      });
   };
 
   //save user in database
@@ -279,13 +286,17 @@ const Signup = () => {
             </select>
           </div>
           {/* submit button */}
-          <div className="mt-6 mx-auto">
-            <button
-              type="submit"
-              className="w-full px-6 py-2 text-sm font-medium trackingWide textWhite capitalize transition-colors duration-300 transform bg-teal-400  rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
-            >
-              Sign Up
-            </button>
+          <div className="mt-6 mx-auto text-center">
+            {loadin ? (
+              <ButtonSpinner />
+            ) : (
+              <button
+                type="submit"
+                className="w-full px-6 py-2 text-sm font-medium trackingWide textWhite capitalize transition-colors duration-300 transform bg-teal-400  rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+              >
+                Sign Up
+              </button>
+            )}
 
             <div className="mt-6 text-center ">
               <span>Already have an account?</span>
