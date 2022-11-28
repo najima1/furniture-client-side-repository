@@ -33,6 +33,8 @@ const MyOrder = () => {
       .catch((e) => console.log(e.message));
   };
 
+  console.log(orderProduct);
+
   return (
     <div>
       {isLoading ? (
@@ -55,6 +57,7 @@ const MyOrder = () => {
                           <tr>
                             <th>image</th>
                             <th>Name</th>
+                            <th>Email</th>
                             <th>action</th>
                           </tr>
                         </thead>
@@ -82,6 +85,10 @@ const MyOrder = () => {
                                 </td>
                                 <td>
                                   {data.name}
+                                  <br />
+                                </td>
+                                <td>
+                                  {data.email}
                                   <br />
                                 </td>
 
