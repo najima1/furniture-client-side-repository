@@ -11,8 +11,6 @@ function Deshboard_sidebar() {
   const { user } = useContext(AuthContext);
   const [role] = UseUserRole(user?.email);
 
-  // console.log(user.displayName);
-
   return (
     // style={{ display: "flex", height: "100%" }}
     <div className="h-screen flex gap-x-5 ">

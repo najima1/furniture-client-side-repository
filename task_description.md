@@ -15,6 +15,7 @@ Your website has to be related to selling used (second-hand products) with the a
 ## done
 1. Your homepage will have a **navbar** , a banner/slider, Advertised items, second-hand **product categories** section and a realistic **footer**.
 
+
 2. Add **one** extra section on the home page. Make sure it is unique and relevant to your website.
 
 ## done
@@ -31,8 +32,7 @@ Your website has to be related to selling used (second-hand products) with the a
 
    **Note:** Do not apply email verification as it will be an inconvenience for the examiner. It is important for the examiner to be able to check your authentication without any hassle. If you want, you can add email verification after getting the assignment result.
 
-## prosseing
-
+## done
 7. If a user(buyer/seller/admin) is logged in, they will see **logout** (should be working) and another option on the header called Dashboard. The dashboard routes will change based on the users:
 ## done
    **Buyers will see:** My orders(see bonus requirement 7),
@@ -44,13 +44,13 @@ Your website has to be related to selling used (second-hand products) with the a
 **Admin will see:** All Sellers, All Buyers (see requirement 12), Reported Items
 
 ## done
-
 8. On the " **Add A Product**" route, create a form that will have fields for product name, price, condition type(excellent, good, fair), mobile number, location (Chittagong, Dhaka, etc.), description, price, Year of purchase and other relevant information. After submitting the form, a modal/toast with a message will pop up to inform the user. Please remember, they must be a seller to add a product (think about the verification process for the admin access). After adding the product, you will then be redirected to the My Products Page.
 
 9. On the **"My Products"** page, sellers can delete sales status (available or sold), price, and any other relevant information they want to show. Please note there will be a special button for each unsold/available product where the seller can hit the button to advertise.
 
 10. The advertised items will appear on the home page. Please note if there are no items marked as advertised, the advertised items section won't be displayed on the home page. The advertised section will only appear if there is one or more available (unsold items) are marked to be advertised.
 
+## mark 1
 11. " **My buyers" are optional.** See the optional section for details. On this page, a seller will see the buyer's phone, name, email address, and location.
 
 ## done

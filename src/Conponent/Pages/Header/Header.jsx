@@ -102,7 +102,7 @@ const Header = () => {
                 to="/question"
                 className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
               >
-                FAQ
+                Blog
               </Link>
 
               <Link
