@@ -73,8 +73,9 @@ Your website has to be related to selling used (second-hand products) with the a
 
 ## Bonus Requirements
 
+## done
 1. Your Readme file for the client-side repo should have details about your project's features and functionalities in bullet points(at least five bullet points) and your live link. Adding a meaningful readme file for the server-side repo is optional.
-
+## done
 2. At least 16 meaningful GitHub commits for the client side and 9 meaningful commits for the server-side repository. Your code should be clean and organized. Comments should be added where necessary
 ## done
 3. Add a meaningful favicon. If data is loading, a spinner will be displayed. When you are loading data by using a loader, make sure you have added a route.
