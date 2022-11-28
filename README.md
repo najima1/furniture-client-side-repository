@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### The reseler web templete created for E-commerce businesses 
+## Uses utility 
+1) React 
+2) mongodb database 
+3) firebase
+4) tailwind css
+5) slick slider
+6) React query
+7) React Hooks form
+
+## For server side 
+1) node js/ express
+
