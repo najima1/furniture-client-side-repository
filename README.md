@@ -69,7 +69,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### The reseler web templete created for E-commerce businesses 
+## The reseler web templete created for E-commerce businesses 
+## Templete Demo live link ( https://app.netlify.com/sites/keen-croquembouche-1ee51e/overview )
 ## Usese utility 
 1) React 
 2) mongodb database 
