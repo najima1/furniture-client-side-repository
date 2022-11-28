@@ -22,7 +22,7 @@ const Footer = () => {
                 </svg>
               </div>
               <span className="self-center text-2xl font-semibold">
-                Brand name
+                FARNIV
               </span>
             </a>
           </div>
