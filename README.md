@@ -82,3 +82,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## For server side 
 1) node js/ express
 
+
+## Check the admin pannel with the ( admin email & passwore)
+adminEmail: \< addmin@gmail.com \>
+
+adminPassword: \< 123Nazim@ \>
