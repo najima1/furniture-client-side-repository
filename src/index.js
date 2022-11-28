@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ContextProvider from './Conponent/Authcontext/ContextProvider';
+import { ProSidebarProvider } from 'react-pro-sidebar';
+
+import { QueryClient, QueryClientProvider, } from '@tanstack/react-query'
+
+// Create a client
+const queryClient = new QueryClient()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <ContextProvider>
+        <ProSidebarProvider>  <App /></ProSidebarProvider>
+
+      </ContextProvider>
+    </QueryClientProvider>
+
   </React.StrictMode>
 );
 
