@@ -1,0 +1,19 @@
+.loaderBtn {
+  width: 25px;
+  height: 25px;
+  border: 4px dotted rgb(217, 88, 215);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

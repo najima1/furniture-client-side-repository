@@ -31,7 +31,7 @@ const Buyer_seller = () => {
     fetch(url, { method: "DELETE" })
       .then((e) => e.json())
       .then((data) => {
-        console.log(data);
+        toast.success("User deleted successfully");
         refetch();
       })
       .catch((e) => console.log(e.message));

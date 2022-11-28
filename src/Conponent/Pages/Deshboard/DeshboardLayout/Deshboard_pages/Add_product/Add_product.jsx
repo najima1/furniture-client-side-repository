@@ -8,7 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../../../Authcontext/ContextProvider";
 
 const Add_product = () => {
-  const { user } = useContext(AuthContext);
+  const { user, loadin } = useContext(AuthContext);
   const navigate = useNavigate();
   const {
     register,
@@ -382,9 +382,9 @@ const Add_product = () => {
             <div className="mt-6 mx-auto">
               <button
                 type="submit"
-                className="w-full px-6 py-2 text-sm font-medium trackingWide textWhite capitalize transition-colors duration-300 transform bg-teal-400  rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                className="w-full px-6 py-2 text-sm font-medium trackingWide textWhite capitalize transition-colors duration-300 transform bg-teal-400  rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 text-white focus:ring-opacity-50"
               >
-                Sign Up
+                Add product
               </button>
             </div>
           </form>
