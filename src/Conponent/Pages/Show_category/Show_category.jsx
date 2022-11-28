@@ -17,7 +17,7 @@ const Show_category = () => {
 
   useEffect(() => {
     let func = async () => {
-      const url = `http://localhost:5000/product/${category}`;
+      const url = `${process.env.REACT_APP_URL}/product/${category}`;
       const res = await axios.get(url);
       const data = await res.data;
       setProduct(data);

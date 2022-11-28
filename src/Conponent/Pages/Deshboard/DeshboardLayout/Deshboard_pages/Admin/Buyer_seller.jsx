@@ -5,6 +5,7 @@ import axios from "axios";
 import "../Admin/seller.css";
 import { useEffect } from "react";
 import Spinner from "../../../../Spinner/Spinner";
+import toast from "react-hot-toast";
 
 const Buyer_seller = () => {
   const user = useParams();
@@ -25,7 +26,17 @@ const Buyer_seller = () => {
     refetch();
   }, [user.role]);
 
-  console.log(user.role);
+  const deleteSellerOrBuyer = (id) => {
+    const url = `${process.env.REACT_APP_URL}/deleteUserByAdmin/${id}`;
+    fetch(url, { method: "DELETE" })
+      .then((e) => e.json())
+      .then((data) => {
+        console.log(data);
+        refetch();
+      })
+      .catch((e) => console.log(e.message));
+  };
+
   return (
     <div>
       {isLoading ? (
@@ -57,7 +68,12 @@ const Buyer_seller = () => {
                       <td>{urs.email}</td>
                       <td>{urs.role}</td>
                       <td>
-                        <button className="btn-sm bg-orange-200">Delete</button>
+                        <button
+                          onClick={() => deleteSellerOrBuyer(urs._id)}
+                          className="btn-sm bg-orange-200"
+                        >
+                          Delete
+                        </button>
                       </td>
                       <td>
                         <button className="btn-sm bg-teal-300">Verify</button>
