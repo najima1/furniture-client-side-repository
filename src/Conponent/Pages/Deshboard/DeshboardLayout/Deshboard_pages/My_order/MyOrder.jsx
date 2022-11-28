@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../../../../Authcontext/ContextProvider";
 import UseUserRole from "../../../../../Auth/UseUserRole";
 import Spinner from "../../../../Spinner/Spinner";
+import toast from "react-hot-toast";
 
 const MyOrder = () => {
   const { user } = useContext(AuthContext);
@@ -28,12 +29,10 @@ const MyOrder = () => {
       .then((e) => e.json())
       .then((data) => {
         refetch();
-        console.log(data);
+        toast.success("Deleted successfull");
       })
       .catch((e) => console.log(e.message));
   };
-
-  console.log(orderProduct);
 
   return (
     <div>
