@@ -16,7 +16,7 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1,
     };
     return (
-      <div className="container mx-auto py-6 md:py-16">
+      <div className="mx-auto py-3">
         <Slider {...settings}>
           <div>
             <img src={banner1} alt="" />
