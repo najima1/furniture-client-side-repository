@@ -3,10 +3,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
+ 
+ In the project want to run install all dependency:
+ 
+ ### `yarn add`
+ 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -70,21 +74,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ## The reseler web templete created for E-commerce businesses 
-## Templete Demo live link ( https://keen-croquembouche-1ee51e.netlify.app )
+## Demo live link ( https://keen-croquembouche-1ee51e.netlify.app )
+
 ## Usese utility 
+
 1) React 
-2) mongodb database 
-3) firebase
-4) tailwind css
+2) Tailwind css
+3) React hooks form
+4) React query
 5) slick slider
-6) React query
-7) React Hooks form
+6) DesyUi
+
+## API call 
+1) axios, fetch, React query
+
+## Authentication / hosting 
+1) Firebase
 
 ## For server side 
 1) node js/ express
 
+## Features 
 
-## Check the admin pannel with the ( admin email & passwore)
-adminEmail: \< addmin@gmail.com \>
+1) There are three types of role like Admin, Saler, Buyer
+2) Admin, Buyer, saler can register & loging.
+3) Admin can see all buyer & saler.
+4) Admin can delete all buyer & saler.
+5) Saler can access all buyer.
+6) Saler can delete any buyer but can't add.
+7) Saler can add product.
+8) Buyer can see all product if he login.
+9) if buyer dosen't login he will redirect in login page after click the product.
 
-adminPassword: \< 123Nazim@ \>
